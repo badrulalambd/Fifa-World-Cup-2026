@@ -49,19 +49,22 @@ button:hover{
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
-    border-bottom: 1px solid #E5E7EB;
 }
 
 /* Header Style Start*/
 header{
-    width: 100%;
     position: sticky;
     top: 0;
     z-index: 999;
     background-color: var(--white);
-    border-bottom: 1px solid #E5E7EB;
-    
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+header.scrolled{
+    /*Border will be added by JS*/
+    border-bottom: 1px solid #e5e5e5;
+}
+
 .header-main{
     display: flex;
     justify-content: space-between;
