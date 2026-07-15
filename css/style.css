@@ -161,6 +161,7 @@ header.scrolled{
     }
     .hero-container{
         min-height: 50vh;
+        padding: 80px 40px 60px 40px;
     }
     
 }
